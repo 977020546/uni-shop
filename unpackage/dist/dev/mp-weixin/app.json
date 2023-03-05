@@ -1,19 +1,11 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/cart/cart",
     "pages/cate/cate",
-    "pages/home/home",
     "pages/my/my"
   ],
-  "subPackages": [
-    {
-      "root": "subpkg",
-      "pages": [
-        "goods_detail/goods_detail",
-        "goods_list/goods_list"
-      ]
-    }
-  ],
+  "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "商品优购",

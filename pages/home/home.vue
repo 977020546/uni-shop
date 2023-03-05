@@ -1,6 +1,5 @@
 <template>
 	<view>
-<<<<<<< HEAD
 		<!-- 轮播图区域 -->
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
 			<!-- 循环渲染轮播图的 item 项 -->
@@ -41,9 +40,6 @@
 			</view>
 			
 		</view>
-=======
-		
->>>>>>> 149df1db6dad1bbd01be01c6c5f467066d75f97e
 	</view>
 </template>
 
@@ -51,7 +47,6 @@
 	export default {
 		data() {
 			return {
-<<<<<<< HEAD
 				// 1. 轮播图的数据列表，默认为空数组
 				swiperList: [],
 				// 2. 分类导航的数据列表
@@ -117,16 +112,10 @@
 			  this.floorList = res.message
 			}
 		},
-=======
-				
-			};
-		}
->>>>>>> 149df1db6dad1bbd01be01c6c5f467066d75f97e
 	}
 </script>
 
 <style lang="scss">
-<<<<<<< HEAD
 	swiper {
 		height: 330rpx;
 
@@ -164,7 +153,4 @@
 		display: flex;
 		padding-left: 10rpx;
 	}
-=======
-
->>>>>>> 149df1db6dad1bbd01be01c6c5f467066d75f97e
 </style>
