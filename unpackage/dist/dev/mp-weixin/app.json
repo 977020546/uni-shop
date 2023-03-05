@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cate/cate",
+    "pages/cart/cart",
+    "pages/my/my"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "商品优购",
+    "navigationBarBackgroundColor": "#c00000",
+    "backgroundColor": "#ffffff"
+  },
+  "usingComponents": {}
+}
