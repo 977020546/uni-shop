@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/cart/cart",
-    "pages/cate/cate",
     "pages/home/home",
+    "pages/cate/cate",
+    "pages/cart/cart",
     "pages/my/my"
   ],
   "subPackages": [
@@ -10,7 +10,8 @@
       "root": "subpkg",
       "pages": [
         "goods_detail/goods_detail",
-        "goods_list/goods_list"
+        "goods_list/goods_list",
+        "search/search"
       ]
     }
   ],
