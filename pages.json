@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/cart/cart",
@@ -30,8 +29,6 @@
 
 		}
 	],
-	
-=======
 	"pages": [{
 		"path": "pages/home/home",
 		"style": {
@@ -60,16 +57,11 @@
 		}
 
 	}],
->>>>>>> 149df1db6dad1bbd01be01c6c5f467066d75f97e
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "商品优购",
 		"navigationBarBackgroundColor": "#c00000",
-<<<<<<< HEAD
 		"backgroundColor": "#Ffffff"
-=======
-		"backgroundColor": "#ffffff"
->>>>>>> 149df1db6dad1bbd01be01c6c5f467066d75f97e
 	},
 	"uniIdRouter": {},
 	"subPackages": [
@@ -88,6 +80,15 @@
                 }
                 ,{
                     "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "search/search",
                     "style" :                                                                                    
                 {
                     "navigationBarTitleText": "",
