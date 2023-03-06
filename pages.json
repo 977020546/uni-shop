@@ -1,6 +1,13 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
 		{
+			"path": "pages/home/home",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		
+		},{
 			"path": "pages/cart/cart",
 			"style": {
 				"enablePullDownRefresh": false
@@ -9,13 +16,6 @@
 		},
 		{
 			"path": "pages/cate/cate",
-			"style": {
-				"enablePullDownRefresh": false
-			}
-
-		},
-		{
-			"path": "pages/home/home",
 			"style": {
 				"enablePullDownRefresh": false
 			}
@@ -68,12 +68,10 @@
 		{
 			"root": "subpkg",
 			"pages": [
-				
-			{
+				{
                     "path" : "goods_detail/goods_detail",
                     "style" :                                                                                    
                 {
-                    "navigationBarTitleText": "",
                     "enablePullDownRefresh": false
                 }
                 
@@ -82,7 +80,6 @@
                     "path" : "goods_list/goods_list",
                     "style" :                                                                                    
                 {
-                    "navigationBarTitleText": "",
                     "enablePullDownRefresh": false
                 }
                 
@@ -113,8 +110,8 @@
 				"text": "分类",
 				"iconPath": "static/tab_icons/cate.png",
 				"selectedIconPath": "static/tab_icons/cate-active.png"
-			},
-			{
+			},{
+				
 				"pagePath": "pages/cart/cart",
 				"text": "购物车",
 				"iconPath": "static/tab_icons/cart.png",
