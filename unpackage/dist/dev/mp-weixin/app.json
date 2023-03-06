@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/cart/cart",
-    "pages/cate/cate",
     "pages/home/home",
+    "pages/cate/cate",
+    "pages/cart/cart",
     "pages/my/my"
   ],
   "subPackages": [
@@ -18,7 +18,7 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "商品优购",
     "navigationBarBackgroundColor": "#c00000",
-    "backgroundColor": "#Ffffff"
+    "backgroundColor": "#ffffff"
   },
   "tabBar": {
     "selectedColor": "#c00000",
