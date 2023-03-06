@@ -64,45 +64,36 @@
 		"backgroundColor": "#Ffffff"
 	},
 	"uniIdRouter": {},
-	"subPackages": [
-		{
-			"root": "subpkg",
-			"pages": [
-				
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [
+
 			{
-                    "path" : "goods_detail/goods_detail",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-                ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-                ,{
-                    "path" : "search/search",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-		}
-	],
+				"path": "goods_detail/goods_detail",
+				"style": {
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "goods_list/goods_list",
+				"style": {
+					"onReachBottomDistance": 150,
+					"enablePullDownRefresh": true,
+					"backgroundColor": "#F8F8F8"
+				}
+
+			}, {
+				"path": "search/search",
+				"style": {
+					"enablePullDownRefresh": false
+				}
+
+			}
+		]
+	}],
 	"tabBar": {
 		"selectedColor": "#c00000",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/home/home",
 				"text": "首页",
 				"iconPath": "static/tab_icons/home.png",
