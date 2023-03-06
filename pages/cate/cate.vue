@@ -1,5 +1,8 @@
 <template>
 	<view>
+		<!-- 使用自定义的搜索组件 -->
+		<my-search @click="gotoSearch"></my-search>
+
 		<view class="scroll-view-container">
 			<!-- 左侧的滚动视图区域 -->
 			<scroll-view class="left-scroll-view" scroll-y :style="{height: wh + 'px'}">
@@ -16,6 +19,10 @@
 					<!-- 动态渲染三级分类的列表数据 -->
 					<view class="cate-lv3-list">
 						<!-- 三级分类 Item 项 -->
+						<view class="cate-lv3-item" v-for="(item3, i3) in item2.children" :key="i3"
+							@click="gotoGoodsList(item3)">
+							<image :src="item3.cat_icon"></image>
+							<text>{{item3.cat_name}}</text>
 						<view class="cate-lv3-item" v-for="(item3, i3) in item2.children" :key="i3" @click="gotoGoodsList(item3)">
 						  <image :src="item3.cat_icon"></image>
 						  <text>{{item3.cat_name}}</text>
@@ -40,6 +47,7 @@
 				// 二级分类列表
 				cateLevel2: [],
 				// 滚动条距离顶部的距离
+				scrollTop: 0
     scrollTop: 0
 			};
 		},
@@ -78,6 +86,27 @@
 			},
 			// 选中项改变的事件处理函数
 			activeChanged(i) {
+				this.active = i
+				this.cateLevel2 = this.cateList[i].children
+
+				// 让 scrollTop 的值在 0 与 1 之间切换
+				this.scrollTop = this.scrollTop === 0 ? 1 : 0
+
+				// 可以简化为如下的代码：
+				// this.scrollTop = this.scrollTop ? 0 : 1
+			},
+			// 点击三级分类项跳转到商品列表页面
+			gotoGoodsList(item3) {
+				uni.navigateTo({
+					url: '/subpkg/goods_list/goods_list?cid=' + item3.cat_id
+				})
+			},
+			// 跳转到分包中的搜索页面
+			   gotoSearch() {
+			     uni.navigateTo({
+			       url: '/subpkg/search/search'
+			     })
+			   }
 			  this.active = i
 			  this.cateLevel2 = this.cateList[i].children
 			
@@ -131,6 +160,18 @@
 			}
 		}
 	}
+
+	.cate-lv2-title {
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+		padding: 15px 0;
+	}
+
+	.cate-lv3-list {
+		display: flex;
+		flex-wrap: wrap;
+
 
 	.cate-lv2-title {
 		font-size: 12px;

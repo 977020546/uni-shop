@@ -98,6 +98,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    mySearch: function () {
+      return __webpack_require__.e(/*! import() | components/my-search/my-search */ "components/my-search/my-search").then(__webpack_require__.bind(null, /*! @/components/my-search/my-search.vue */ 85))
+    },
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function () {
   var _vm = this
   var _h = _vm.$createElement
@@ -134,8 +157,14 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {
+
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 Object.defineProperty(exports, "__esModule", {
@@ -145,6 +174,14 @@ exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 40));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 42));
+
+var _methods;
+//
+//
+//
+//
+
+
 //
 //
 //
@@ -209,7 +246,11 @@ var _default = {
     // 3. 在 onLoad 中调用获取楼层数据的方法
     this.getFloorList();
   },
+
+  methods: (_methods = {
+
   methods: (0, _defineProperty2.default)({
+
     // 1. 获取轮播图数据的方法
     getSwiperList: function getSwiperList() {
       var _this = this;
@@ -306,7 +347,11 @@ var _default = {
         }, _callee3);
       }))();
     }
+
+  }, (0, _defineProperty2.default)(_methods, "getFloorList", function getFloorList() {
+
   }, "getFloorList", function getFloorList() {
+
     var _this4 = this;
     return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee4() {
       var _yield$uni$$http$get4, res;
@@ -339,7 +384,15 @@ var _default = {
         }
       }, _callee4);
     }))();
+
+  }), (0, _defineProperty2.default)(_methods, "gotoSearch", function gotoSearch() {
+    uni.navigateTo({
+      url: '/subpkg/search/search'
+    });
+  }), _methods)
+
   })
+
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
