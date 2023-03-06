@@ -64,6 +64,33 @@
 		"backgroundColor": "#Ffffff"
 	},
 	"uniIdRouter": {},
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [
+
+			{
+				"path": "goods_detail/goods_detail",
+				"style": {
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "goods_list/goods_list",
+				"style": {
+					"onReachBottomDistance": 150,
+					"enablePullDownRefresh": true,
+					"backgroundColor": "#F8F8F8"
+				}
+
+			}, {
+				"path": "search/search",
+				"style": {
+					"enablePullDownRefresh": false
+				}
+
+			}
+		]
+	}],
 	"subPackages": [
 		{
 			"root": "subpkg",
@@ -98,8 +125,7 @@
 	],
 	"tabBar": {
 		"selectedColor": "#c00000",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/home/home",
 				"text": "首页",
 				"iconPath": "static/tab_icons/home.png",
