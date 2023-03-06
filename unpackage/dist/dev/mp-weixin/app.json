@@ -10,7 +10,8 @@
       "root": "subpkg",
       "pages": [
         "goods_detail/goods_detail",
-        "goods_list/goods_list"
+        "goods_list/goods_list",
+        "search/search"
       ]
     }
   ],
@@ -18,7 +19,7 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "商品优购",
     "navigationBarBackgroundColor": "#c00000",
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#Ffffff"
   },
   "tabBar": {
     "selectedColor": "#c00000",
