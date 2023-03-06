@@ -210,6 +210,7 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 //
 var _default = {
   data: function data() {
+
     return {
       // 商品列表的数据
       goodsList: [],
@@ -304,6 +305,11 @@ var _default = {
       });
     }
   }
+
+    return {};
+  },
+  methods: {}
+
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))

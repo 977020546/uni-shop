@@ -157,8 +157,14 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {
+
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 Object.defineProperty(exports, "__esModule", {
@@ -168,11 +174,14 @@ exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 40));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 42));
+
 var _methods;
 //
 //
 //
 //
+
+
 //
 //
 //
@@ -237,7 +246,11 @@ var _default = {
     // 3. 在 onLoad 中调用获取楼层数据的方法
     this.getFloorList();
   },
+
   methods: (_methods = {
+
+  methods: (0, _defineProperty2.default)({
+
     // 1. 获取轮播图数据的方法
     getSwiperList: function getSwiperList() {
       var _this = this;
@@ -334,7 +347,11 @@ var _default = {
         }, _callee3);
       }))();
     }
+
   }, (0, _defineProperty2.default)(_methods, "getFloorList", function getFloorList() {
+
+  }, "getFloorList", function getFloorList() {
+
     var _this4 = this;
     return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee4() {
       var _yield$uni$$http$get4, res;
@@ -367,11 +384,15 @@ var _default = {
         }
       }, _callee4);
     }))();
+
   }), (0, _defineProperty2.default)(_methods, "gotoSearch", function gotoSearch() {
     uni.navigateTo({
       url: '/subpkg/search/search'
     });
   }), _methods)
+
+  })
+
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))

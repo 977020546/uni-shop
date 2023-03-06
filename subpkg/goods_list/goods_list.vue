@@ -97,6 +97,16 @@
 
 		.goods-item-left {
 			margin-right: 5px;
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
 
 			.goods-pic {
 				width: 100px;

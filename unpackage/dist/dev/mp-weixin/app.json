@@ -1,8 +1,13 @@
 {
   "pages": [
     "pages/home/home",
+
     "pages/cate/cate",
     "pages/cart/cart",
+
+    "pages/cart/cart",
+    "pages/cate/cate",
+
     "pages/my/my"
   ],
   "subPackages": [
