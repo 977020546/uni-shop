@@ -1,10 +1,17 @@
 <template>
 	<view>
 		<view class="goods-list">
+<<<<<<< HEAD
 			<view v-for="(item, i) in goodsList" :key="i" @click="gotoDetail(item)">
 				<!-- 为 my-goods 组件动态绑定 goods 属性的值 -->
 				<my-goods :goods="item"></my-goods>
 			</view>
+=======
+		  <view v-for="(item, i) in goodsList" :key="i" @click="gotoDetail(item)">
+		    <!-- 为 my-goods 组件动态绑定 goods 属性的值 -->
+		    <my-goods :goods="item"></my-goods>
+		  </view>
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 		</view>
 	</view>
 </template>
@@ -75,14 +82,24 @@
 				this.isloading = false
 				this.goodsList = []
 
+<<<<<<< HEAD
 				// 2. 重新发起请求
+=======
+			 // 2. 重新发起请求
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 				this.getGoodsList(() => uni.stopPullDownRefresh())
 			},
 			// 点击跳转到商品详情页面
 			gotoDetail(item) {
+<<<<<<< HEAD
 				uni.navigateTo({
 					url: '/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id
 				})
+=======
+			  uni.navigateTo({
+			    url: '/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id
+			  })
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 			}
 		},
 
@@ -97,6 +114,7 @@
 
 		.goods-item-left {
 			margin-right: 5px;
+<<<<<<< HEAD
 
 		}
 	}
@@ -121,4 +139,31 @@
 			color: #c00000;
 		}
 	}
+=======
+				
+			}
+
+	}
+
+			.goods-pic {
+				width: 100px;
+				height: 100px;
+				display: block;
+			}
+
+		.goods-item-right {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.goods-name {
+				font-size: 13px;
+			}
+
+			.goods-price {
+				font-size: 16px;
+				color: #c00000;
+			}
+		}
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 </style>

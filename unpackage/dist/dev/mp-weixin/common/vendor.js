@@ -10134,9 +10134,15 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /* 99 */,
 /* 100 */,
 /* 101 */
+<<<<<<< HEAD
 /*!*******************************************************************************!*\
   !*** D:/系统默认/文档/uni-shop/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \*******************************************************************************/
+=======
+/*!**************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \**************************************************************************************************************/
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11161,6 +11167,7 @@ exports.default = _default;
 /* 106 */,
 /* 107 */,
 /* 108 */,
+<<<<<<< HEAD
 /* 109 */,
 /* 110 */,
 /* 111 */,
@@ -11172,6 +11179,12 @@ exports.default = _default;
 /*!**********************************************************************************************!*\
   !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
   \**********************************************************************************************/
+=======
+/* 109 */
+/*!***************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/index.js ***!
+  \***************************************************************************************************************************/
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11183,9 +11196,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+<<<<<<< HEAD
 var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 117));
 var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 118));
 var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 119));
+=======
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 110));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 111));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 112));
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 var _default = {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -11194,30 +11213,121 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 117 */
 /*!*********************************************************************************************!*\
   !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
   \*********************************************************************************************/
+=======
+/* 110 */
+/*!**************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/en.json ***!
+  \**************************************************************************************************************************/
+/*! exports provided: uni-goods-nav.options.shop, uni-goods-nav.options.cart, uni-goods-nav.buttonGroup.addToCart, uni-goods-nav.buttonGroup.buyNow, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-goods-nav.options.shop\":\"shop\",\"uni-goods-nav.options.cart\":\"cart\",\"uni-goods-nav.buttonGroup.addToCart\":\"add to cart\",\"uni-goods-nav.buttonGroup.buyNow\":\"buy now\"}");
+
+/***/ }),
+/* 111 */
+/*!*******************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hans.json ***!
+  \*******************************************************************************************************************************/
+/*! exports provided: uni-goods-nav.options.shop, uni-goods-nav.options.cart, uni-goods-nav.buttonGroup.addToCart, uni-goods-nav.buttonGroup.buyNow, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-goods-nav.options.shop\":\"店铺\",\"uni-goods-nav.options.cart\":\"购物车\",\"uni-goods-nav.buttonGroup.addToCart\":\"加入购物车\",\"uni-goods-nav.buttonGroup.buyNow\":\"立即购买\"}");
+
+/***/ }),
+/* 112 */
+/*!*******************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hant.json ***!
+  \*******************************************************************************************************************************/
+/*! exports provided: uni-goods-nav.options.shop, uni-goods-nav.options.cart, uni-goods-nav.buttonGroup.addToCart, uni-goods-nav.buttonGroup.buyNow, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-goods-nav.options.shop\":\"店鋪\",\"uni-goods-nav.options.cart\":\"購物車\",\"uni-goods-nav.buttonGroup.addToCart\":\"加入購物車\",\"uni-goods-nav.buttonGroup.buyNow\":\"立即購買\"}");
+
+/***/ }),
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */
+/*!*****************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 128));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 129));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 130));
+var _default = {
+  en: _en.default,
+  'zh-Hans': _zhHans.default,
+  'zh-Hant': _zhHant.default
+};
+exports.default = _default;
+
+/***/ }),
+/* 128 */
+/*!****************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
+  \****************************************************************************************************************************/
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"Search enter content\"}");
 
 /***/ }),
+<<<<<<< HEAD
 /* 118 */
 /*!**************************************************************************************************!*\
   !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
   \**************************************************************************************************/
+=======
+/* 129 */
+/*!*********************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
+  \*********************************************************************************************************************************/
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"请输入搜索内容\"}");
 
 /***/ }),
+<<<<<<< HEAD
 /* 119 */
 /*!**************************************************************************************************!*\
   !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
   \**************************************************************************************************/
+=======
+/* 130 */
+/*!*********************************************************************************************************************************!*\
+  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
+  \*********************************************************************************************************************************/
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 

@@ -61,6 +61,7 @@
 			}
 		]
 	}],
+<<<<<<< HEAD
 	"subPackages": [
 		{
 			"root": "subpkg",
@@ -93,6 +94,8 @@
             ]
 		}
 	],
+=======
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 	"tabBar": {
 		"selectedColor": "#c00000",
 		"list": [{

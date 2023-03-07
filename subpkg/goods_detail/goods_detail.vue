@@ -28,6 +28,7 @@
 		<rich-text :nodes="goods_info.goods_introduce"></rich-text>
 		<!-- 商品导航组件 -->
 		<view class="goods_nav">
+<<<<<<< HEAD
 			<!-- fill 控制右侧按钮的样式 -->
 		 <!-- options 左侧按钮的配置项 -->
 			<!-- buttonGroup 右侧按钮的配置项 -->
@@ -35,6 +36,14 @@
 		 <!-- buttonClick 右侧按钮的点击事件处理函数 -->
 			<uni-goods-nav :fill="true" :options="options" :buttonGroup="buttonGroup" @click="onClick"
 				@buttonClick="buttonClick" />
+=======
+		  <!-- fill 控制右侧按钮的样式 -->
+		  <!-- options 左侧按钮的配置项 -->
+		  <!-- buttonGroup 右侧按钮的配置项 -->
+		  <!-- click 左侧按钮的点击事件处理函数 -->
+		  <!-- buttonClick 右侧按钮的点击事件处理函数 -->
+		  <uni-goods-nav :fill="true" :options="options" :buttonGroup="buttonGroup" @click="onClick" @buttonClick="buttonClick" />
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 		</view>
 	</view>
 </template>
@@ -70,21 +79,33 @@
 		},
 		onLoad(options) {
 			// 获取商品 Id
+<<<<<<< HEAD
 			const goods_id = options.goods_id
+=======
+		 const goods_id = options.goods_id
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 			// 调用请求商品详情数据的方法
 			this.getGoodsDetail(goods_id)
 		},
 		methods: {
 			// 定义请求商品详情数据的方法
 			async getGoodsDetail(goods_id) {
+<<<<<<< HEAD
 				const {
+=======
+			 const {
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 					data: res
 				} = await uni.$http.get('/api/public/v1/goods/detail', {
 					goods_id
 				})
 				if (res.meta.status !== 200) return uni.$showMsg()
 				// 为 data 中的数据赋值
+<<<<<<< HEAD
 				this.goods_info = res.message
+=======
+			 this.goods_info = res.message
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 			},
 			// 实现轮播图的预览效果
 			preview(i) {
@@ -92,7 +113,11 @@
 				uni.previewImage({
 					// 预览时，默认显示图片的索引
 					current: i,
+<<<<<<< HEAD
 					// 所有图片 url 地址的数组
+=======
+			  // 所有图片 url 地址的数组
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 					urls: this.goods_info.pics.map(x => x.pics_big)
 				})
 			},
@@ -126,6 +151,7 @@
 			},
 			// 左侧按钮的点击事件处理函数
 			onClick(e) {
+<<<<<<< HEAD
 				if (e.content.text === '购物车') {
 					// 切换到购物车页面
 					uni.switchTab({
@@ -134,6 +160,15 @@
 				}
 			}
 
+=======
+			  if (e.content.text === '购物车') {
+			    // 切换到购物车页面
+			    uni.switchTab({
+			      url: '/pages/cart/cart'
+			    })
+			  }
+			}
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 		}
 
 	}
@@ -141,12 +176,22 @@
 <style lang="scss">
 	swiper {
 		height: 750rpx;
+<<<<<<< HEAD
 		image {
 			width: 100%;
 			height: 100%;
 		}
 	}
 
+=======
+
+		image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 	// 商品信息区域的样式
 	.goods-info-box {
 		padding: 10px;
@@ -187,6 +232,7 @@
 			color: gray;
 		}
 	}
+<<<<<<< HEAD
 
 	.goods-detail-container {
 		// 给页面外层的容器，添加 50px 的内padding，
@@ -200,5 +246,19 @@
 		bottom: 0;
 		left: 0;
 		width: 100%;
+=======
+	.goods-detail-container {
+	  // 给页面外层的容器，添加 50px 的内padding，
+	  // 防止页面内容被底部的商品导航组件遮盖
+	  padding-bottom: 50px;
+	}
+	
+	.goods_nav {
+	  // 为商品导航组件添加固定定位
+	  position: fixed;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
 	}
 </style>

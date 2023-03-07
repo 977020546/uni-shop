@@ -1,6 +1,11 @@
 {
   "enablePullDownRefresh": false,
   "usingComponents": {
+<<<<<<< HEAD
     "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons"
+=======
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "uni-goods-nav": "/uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav"
+>>>>>>> ce7e95e13618f3df50883204325a2d6060dcca36
   }
 }
