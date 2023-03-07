@@ -19,5 +19,9 @@
                 }
             ]
         }
+    },
+    "projectname": "uni-shop",
+    "setting": {
+        "compileHotReLoad": true
     }
 }
