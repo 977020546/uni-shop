@@ -1543,7 +1543,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8897,7 +8897,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8918,14 +8918,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9021,7 +9021,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uni-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9439,9 +9439,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 26 */
-/*!*********************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/pages.json ***!
-  \*********************************************************************/
+/*!**************************************!*\
+  !*** D:/系统默认/文档/uni-shop/pages.json ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9585,9 +9585,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 33 */
-/*!*****************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/node_modules/@escook/request-miniprogram/miniprogram_dist/index.js ***!
-  \*****************************************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/系统默认/文档/uni-shop/node_modules/@escook/request-miniprogram/miniprogram_dist/index.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10129,73 +10129,14 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /* 94 */,
 /* 95 */,
 /* 96 */,
-/* 97 */
-/*!*****************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
-  \*****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 98));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 99));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 100));
-var _default = {
-  en: _en.default,
-  'zh-Hans': _zhHans.default,
-  'zh-Hant': _zhHant.default
-};
-exports.default = _default;
-
-/***/ }),
-/* 98 */
-/*!****************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
-  \****************************************************************************************************************************/
-/*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"Search enter content\"}");
-
-/***/ }),
-/* 99 */
-/*!*********************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
-  \*********************************************************************************************************************************/
-/*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"请输入搜索内容\"}");
-
-/***/ }),
-/* 100 */
-/*!*********************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
-  \*********************************************************************************************************************************/
-/*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"請輸入搜索內容\"}");
-
-/***/ }),
-/* 101 */,
-/* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */
-/*!**************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-icons/components/uni-icons/icons.js ***!
-  \**************************************************************************************************************/
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */
+/*!*******************************************************************************!*\
+  !*** D:/系统默认/文档/uni-shop/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11212,12 +11153,7 @@ var _default = {
 };
 exports.default = _default;
 
-
 /***/ }),
-/* 98 */,
-/* 99 */,
-/* 100 */,
-/* 101 */,
 /* 102 */,
 /* 103 */,
 /* 104 */,
@@ -11227,10 +11163,15 @@ exports.default = _default;
 /* 108 */,
 /* 109 */,
 /* 110 */,
-/* 111 */
-/*!*****************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
-  \*****************************************************************************************************************************/
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */
+/*!**********************************************************************************************!*\
+  !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11242,9 +11183,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 112));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 113));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 114));
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 117));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 118));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 119));
 var _default = {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -11253,36 +11194,34 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 112 */
-/*!****************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
-  \****************************************************************************************************************************/
+/* 117 */
+/*!*********************************************************************************************!*\
+  !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
+  \*********************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"Search enter content\"}");
 
 /***/ }),
-/* 113 */
-/*!*********************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
-  \*********************************************************************************************************************************/
+/* 118 */
+/*!**************************************************************************************************!*\
+  !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
+  \**************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"请输入搜索内容\"}");
 
 /***/ }),
-/* 114 */
-/*!*********************************************************************************************************************************!*\
-  !*** E:/APP/HBuilderX/HBuilderProjects/uni-app/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
-  \*********************************************************************************************************************************/
+/* 119 */
+/*!**************************************************************************************************!*\
+  !*** D:/系统默认/文档/uni-shop/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
+  \**************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"請輸入搜索內容\"}");
-
-
 
 /***/ })
 ]]);

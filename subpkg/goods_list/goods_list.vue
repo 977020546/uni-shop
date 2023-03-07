@@ -1,10 +1,10 @@
 <template>
 	<view>
 		<view class="goods-list">
-		  <view v-for="(item, i) in goodsList" :key="i" @click="gotoDetail(item)">
-		    <!-- 为 my-goods 组件动态绑定 goods 属性的值 -->
-		    <my-goods :goods="item"></my-goods>
-		  </view>
+			<view v-for="(item, i) in goodsList" :key="i" @click="gotoDetail(item)">
+				<!-- 为 my-goods 组件动态绑定 goods 属性的值 -->
+				<my-goods :goods="item"></my-goods>
+			</view>
 		</view>
 	</view>
 </template>
@@ -75,14 +75,14 @@
 				this.isloading = false
 				this.goodsList = []
 
-			 // 2. 重新发起请求
+				// 2. 重新发起请求
 				this.getGoodsList(() => uni.stopPullDownRefresh())
 			},
 			// 点击跳转到商品详情页面
 			gotoDetail(item) {
-			  uni.navigateTo({
-			    url: '/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id
-			  })
+				uni.navigateTo({
+					url: '/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id
+				})
 			}
 		},
 
@@ -97,37 +97,28 @@
 
 		.goods-item-left {
 			margin-right: 5px;
-				
-			}
-		},
-		methods: {
-			
+
 		}
 	}
-</script>
 
-<style>
+	.goods-pic {
+		width: 100px;
+		height: 100px;
+		display: block;
+	}
 
-			.goods-pic {
-				width: 100px;
-				height: 100px;
-				display: block;
-			}
+	.goods-item-right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.goods-name {
+			font-size: 13px;
 		}
 
-		.goods-item-right {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-
-			.goods-name {
-				font-size: 13px;
-			}
-
-			.goods-price {
-				font-size: 16px;
-				color: #c00000;
-			}
+		.goods-price {
+			font-size: 16px;
+			color: #c00000;
 		}
 	}
 </style>
