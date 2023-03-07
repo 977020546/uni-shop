@@ -5,6 +5,9 @@ import Vue from 'vue'
 
 import { $http } from '@escook/request-miniprogram'
 
+// 1. 导入 store 的实例对象
+import store from "store/store.js"
+
 uni.$http = $http
 // 配置请求根路径
 $http.baseUrl = 'https://api-hmugo-web.itheima.net'
@@ -62,7 +65,9 @@ try {
 } catch (error) { }
 
 const app = new Vue({
-  ...App
+  ...App,
+   // 2. 将 store 挂载到 Vue 实例上
+  store,
 })
 app.$mount()
 // #endif
